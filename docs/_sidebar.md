@@ -1,6 +1,5 @@
-- 高级特性
-- [函数式编程](functional-program/functional-program.md)
-- [面向对象编程](functional-program/functional-program.md)
-- [并发编程](concurrent-programming/concurrent-programming.md)
-- [模块(library)](module/module.md)
-- [io编程(io)](io/io.md)
+- [线性代数的本质]()
+    - [什么是向量](essense-of-linear-algebra/1-what-are-vectors.md)
+    - [线性组合、张成的空间与基](essense-of-linear-algebra/2-linear-combinations-span-and-basis-vectors.md)
+    - [线性变换和矩阵](essense-of-linear-algebra/3-linear-transformations-and-matrices.md)
+    - [复合矩阵](essense-of-linear-algebra/4-matrix-multiplication-as-composition.md)

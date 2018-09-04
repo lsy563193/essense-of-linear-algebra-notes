@@ -1,4 +1,4 @@
-<h1 align="center">廖晓峰python笔记</h1>
+<h1 align="center">线性代数的本质学习笔记</h1>
 
 <p align="center"><a href="lsy563193.github.io"><img src="https://img.shields.io/badge/%E4%BD%9C%E8%80%85-%E6%9E%97%E5%B0%91%E5%B2%B3-blue.svg"></a></p>
 
@@ -6,14 +6,11 @@
 
 推荐阅览 html 版本的笔记，由 [docsify](https://docsify.js.org/#/zh-cn/) 动态生成文档网站。
 
-[在线阅览地址](http://lsy563193.github.io/python-notes)
+[在线阅览地址](http://lsy563193.github.io/essense-of-linear-algebra-notes)
 
-## 代码
-
-本仓库暂时只包含本人已完成的各课练习代码，请在 [assignments 文件夹](https://github.com/lsy563193/python-notes/assignments)下查找。你可以通过在 github 上搜索。
 ## 课程地址
 
-[廖晓峰python课程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
+[线性代数的本质](https://www.bilibili.com/video/av5977466?from=search&seid=2295034275075336557)
 
 ## Github
 
