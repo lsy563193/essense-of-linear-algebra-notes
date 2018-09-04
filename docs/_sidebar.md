@@ -3,3 +3,4 @@
     - [线性组合、张成的空间与基](essense-of-linear-algebra/2-linear-combinations-span-and-basis-vectors.md)
     - [线性变换和矩阵](essense-of-linear-algebra/3-linear-transformations-and-matrices.md)
     - [复合矩阵](essense-of-linear-algebra/4-matrix-multiplication-as-composition.md)
+    - [行列式](essense-of-linear-algebra/5-the-determinant.md)
