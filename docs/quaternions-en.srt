@@ -1,0 +1,3223 @@
+1
+00:00:00,050 --> 00:00:02,340
+what you were looking at right now is
+
+2
+00:00:02,340 --> 00:00:03,500
+something called quaternion
+
+3
+00:00:03,500 --> 00:00:06,210
+multiplication or rather you're looking
+
+4
+00:00:06,210 --> 00:00:08,130
+at a certain representation of a
+
+5
+00:00:08,130 --> 00:00:09,780
+specific motion happening on a
+
+6
+00:00:09,780 --> 00:00:11,580
+four-dimensional sphere being
+
+7
+00:00:11,580 --> 00:00:13,200
+represented in our three-dimensional
+
+8
+00:00:13,200 --> 00:00:16,020
+space one which he'll understand by the
+
+9
+00:00:16,020 --> 00:00:18,680
+end of this video
+
+10
+00:00:20,720 --> 00:00:23,010
+quarter neons are an absolutely
+
+11
+00:00:23,010 --> 00:00:24,600
+fascinating and often underappreciated
+
+12
+00:00:24,600 --> 00:00:28,140
+number system from math just as complex
+
+13
+00:00:28,140 --> 00:00:29,970
+numbers are a two-dimensional extension
+
+14
+00:00:29,970 --> 00:00:31,920
+of the real numbers quaternions
+
+15
+00:00:31,920 --> 00:00:33,750
+are a four dimensional extension of
+
+16
+00:00:33,750 --> 00:00:36,090
+complex numbers but they're not just
+
+17
+00:00:36,090 --> 00:00:38,100
+playful mathematical shenanigans they
+
+18
+00:00:38,100 --> 00:00:40,110
+have a surprisingly pragmatic utility
+
+19
+00:00:40,110 --> 00:00:41,790
+for describing rotation in three
+
+20
+00:00:41,790 --> 00:00:43,440
+dimensions and even for quantum
+
+21
+00:00:43,440 --> 00:00:46,110
+mechanics the story of their discovery
+
+22
+00:00:46,110 --> 00:00:48,570
+is also quite famous in math the Irish
+
+23
+00:00:48,570 --> 00:00:49,920
+mathematician William Rowan Hamilton
+
+24
+00:00:49,920 --> 00:00:52,140
+spent much of his life seeking a three
+
+25
+00:00:52,140 --> 00:00:54,210
+dimensional number system analogous to
+
+26
+00:00:54,210 --> 00:00:56,699
+the complex numbers and as the story
+
+27
+00:00:56,699 --> 00:00:58,320
+goes his son would ask him every morning
+
+28
+00:00:58,320 --> 00:00:59,879
+whether or not he had figured out how to
+
+29
+00:00:59,879 --> 00:01:01,739
+divide triples and he would always say
+
+30
+00:01:01,739 --> 00:01:02,760
+no not yet
+
+31
+00:01:02,760 --> 00:01:06,299
+but on October 16th 1843 while crossing
+
+32
+00:01:06,299 --> 00:01:08,640
+the Broome bridge in Dublin he realized
+
+33
+00:01:08,640 --> 00:01:10,560
+what they supposed flash of insight that
+
+34
+00:01:10,560 --> 00:01:12,180
+what he needed was not to add a single
+
+35
+00:01:12,180 --> 00:01:14,460
+dimension to the complex numbers but to
+
+36
+00:01:14,460 --> 00:01:17,340
+add two more imaginary dimensions three
+
+37
+00:01:17,340 --> 00:01:19,229
+imaginary dimensions describing space
+
+38
+00:01:19,229 --> 00:01:20,970
+and the real numbers sitting
+
+39
+00:01:20,970 --> 00:01:22,710
+perpendicular to that in some kind of
+
+40
+00:01:22,710 --> 00:01:25,020
+fourth dimension he carved the crucial
+
+41
+00:01:25,020 --> 00:01:26,310
+equation describing these three
+
+42
+00:01:26,310 --> 00:01:28,470
+imaginary units into the bridge which
+
+43
+00:01:28,470 --> 00:01:30,150
+today bears a plaque in his honor
+
+44
+00:01:30,150 --> 00:01:32,820
+showing that equation now you have to
+
+45
+00:01:32,820 --> 00:01:35,189
+understand our modern notion of vectors
+
+46
+00:01:35,189 --> 00:01:36,570
+with their dot product and the cross
+
+47
+00:01:36,570 --> 00:01:38,549
+product and things like that didn't
+
+48
+00:01:38,549 --> 00:01:40,799
+really exist in Hamilton's time at least
+
+49
+00:01:40,799 --> 00:01:43,290
+not in a standardized form so after his
+
+50
+00:01:43,290 --> 00:01:45,450
+discovery he pushed hard for Quattro
+
+51
+00:01:45,450 --> 00:01:47,850
+neons to be the primary language with
+
+52
+00:01:47,850 --> 00:01:49,200
+which we teach students to describe
+
+53
+00:01:49,200 --> 00:01:51,360
+three-dimensional space even forming an
+
+54
+00:01:51,360 --> 00:01:53,220
+official quaternion society to
+
+55
+00:01:53,220 --> 00:01:55,350
+proselytize his discovery now
+
+56
+00:01:55,350 --> 00:01:57,329
+unfortunately this was balanced with
+
+57
+00:01:57,329 --> 00:01:58,890
+mathematicians on the other side of the
+
+58
+00:01:58,890 --> 00:02:00,630
+fence who believed that the confusing
+
+59
+00:02:00,630 --> 00:02:02,880
+notion of quaternion multiplication was
+
+60
+00:02:02,880 --> 00:02:04,649
+not necessary for describing three
+
+61
+00:02:04,649 --> 00:02:06,659
+dimensions resulting in some truly
+
+62
+00:02:06,659 --> 00:02:08,310
+hilarious old-timey trash-talk
+
+63
+00:02:08,310 --> 00:02:10,250
+legitimately calling them evil
+
+64
+00:02:10,250 --> 00:02:12,230
+it's even believed that the Mad Hatter
+
+65
+00:02:12,230 --> 00:02:14,000
+scene from Alice in Wonderland whose
+
+66
+00:02:14,000 --> 00:02:15,380
+author you may know was an Oxford
+
+67
+00:02:15,380 --> 00:02:17,780
+mathematician was written in reference
+
+68
+00:02:17,780 --> 00:02:20,030
+to quaternions that the chaotic table
+
+69
+00:02:20,030 --> 00:02:21,530
+placement changes were mocking their
+
+70
+00:02:21,530 --> 00:02:23,600
+multiplication and that certain quotes
+
+71
+00:02:23,600 --> 00:02:25,310
+were referencing their non commutative
+
+72
+00:02:25,310 --> 00:02:28,490
+nature fast forward about a century and
+
+73
+00:02:28,490 --> 00:02:30,350
+the computing industry gave quaternions
+
+74
+00:02:30,350 --> 00:02:32,330
+a resurgence among programmers who work
+
+75
+00:02:32,330 --> 00:02:34,310
+with graphics and robotics and anything
+
+76
+00:02:34,310 --> 00:02:36,410
+involving orientation in 3d space and
+
+77
+00:02:36,410 --> 00:02:38,810
+this is because they give an elegant way
+
+78
+00:02:38,810 --> 00:02:41,660
+to describe and compute 3d rotations
+
+79
+00:02:41,660 --> 00:02:43,940
+which is computationally more efficient
+
+80
+00:02:43,940 --> 00:02:45,800
+than other methods and which also avoids
+
+81
+00:02:45,800 --> 00:02:47,690
+a lot of the numerical errors that arise
+
+82
+00:02:47,690 --> 00:02:49,970
+in these other methods the 20th century
+
+83
+00:02:49,970 --> 00:02:51,800
+also brought quaternion some more love
+
+84
+00:02:51,800 --> 00:02:53,239
+from a completely different direction
+
+85
+00:02:53,239 --> 00:02:55,820
+quantum mechanics you see the special
+
+86
+00:02:55,820 --> 00:02:57,800
+actions the quaternions described in
+
+87
+00:02:57,800 --> 00:02:59,660
+four dimensions are actually quite
+
+88
+00:02:59,660 --> 00:03:01,130
+relevant to the way the two-state
+
+89
+00:03:01,130 --> 00:03:03,140
+systems like spin of an electron or the
+
+90
+00:03:03,140 --> 00:03:05,180
+polarization of a photon are described
+
+91
+00:03:05,180 --> 00:03:08,090
+mathematically what I'll show you here
+
+92
+00:03:08,090 --> 00:03:10,489
+is a way to visualize quaternions in
+
+93
+00:03:10,489 --> 00:03:12,860
+their full four-dimensional glory it
+
+94
+00:03:12,860 --> 00:03:14,510
+would surprise me if this approach was
+
+95
+00:03:14,510 --> 00:03:16,430
+fully original but I can say that it's
+
+96
+00:03:16,430 --> 00:03:18,019
+certainly not the standard way to teach
+
+97
+00:03:18,019 --> 00:03:18,799
+pattern eons
+
+98
+00:03:18,799 --> 00:03:21,019
+and that the specific four-dimensional
+
+99
+00:03:21,019 --> 00:03:22,610
+right-hand-rule image that I'd like to
+
+100
+00:03:22,610 --> 00:03:24,500
+build up to is something that I haven't
+
+101
+00:03:24,500 --> 00:03:26,480
+really seen elsewhere building up an
+
+102
+00:03:26,480 --> 00:03:28,100
+understanding for this visual will take
+
+103
+00:03:28,100 --> 00:03:30,110
+us meaningful time but once you have it
+
+104
+00:03:30,110 --> 00:03:32,030
+there is a very natural and satisfying
+
+105
+00:03:32,030 --> 00:03:33,650
+intuition for how to think about
+
+106
+00:03:33,650 --> 00:03:36,080
+quaternion multiplication it won't be
+
+107
+00:03:36,080 --> 00:03:37,850
+until the next video that I show you how
+
+108
+00:03:37,850 --> 00:03:39,320
+exactly quarter neons describe
+
+109
+00:03:39,320 --> 00:03:41,480
+orientation in three dimensions which is
+
+110
+00:03:41,480 --> 00:03:42,980
+for some people the whole reason we care
+
+111
+00:03:42,980 --> 00:03:45,140
+about it but once we're able to go at it
+
+112
+00:03:45,140 --> 00:03:46,489
+armed with the image of what they're
+
+113
+00:03:46,489 --> 00:03:48,829
+doing to a 4d hyper sphere there's a
+
+114
+00:03:48,829 --> 00:03:50,630
+pleasing understanding to be had for the
+
+115
+00:03:50,630 --> 00:03:52,910
+otherwise opaque formulas characterizing
+
+116
+00:03:52,910 --> 00:03:54,959
+this relationship
+
+117
+00:03:54,959 --> 00:03:57,000
+the structure here will be to start by
+
+118
+00:03:57,000 --> 00:03:59,069
+imagining teaching complex numbers to
+
+119
+00:03:59,069 --> 00:04:00,719
+someone who only understands one
+
+120
+00:04:00,719 --> 00:04:03,239
+dimension then describing 3d rotations
+
+121
+00:04:03,239 --> 00:04:04,859
+to someone who only understands two
+
+122
+00:04:04,859 --> 00:04:07,409
+dimensions and ultimately to represent
+
+123
+00:04:07,409 --> 00:04:09,120
+what quaternions are doing up in four
+
+124
+00:04:09,120 --> 00:04:11,159
+dimensions within the constraints of our
+
+125
+00:04:11,159 --> 00:04:13,819
+3d space
+
+126
+00:04:16,500 --> 00:04:19,209
+our first character is Linus the line
+
+127
+00:04:19,209 --> 00:04:21,699
+Lander whose mind can only grasp the one
+
+128
+00:04:21,699 --> 00:04:23,500
+dimensional geometry of lines in the
+
+129
+00:04:23,500 --> 00:04:25,840
+algebra of real numbers we're gonna try
+
+130
+00:04:25,840 --> 00:04:27,880
+to describe complex members to Linus and
+
+131
+00:04:27,880 --> 00:04:29,260
+it's really important for you to
+
+132
+00:04:29,260 --> 00:04:31,060
+empathize with him as much as you can
+
+133
+00:04:31,060 --> 00:04:32,830
+during this because in a few minutes
+
+134
+00:04:32,830 --> 00:04:35,139
+you're gonna be in his shoes on the one
+
+135
+00:04:35,139 --> 00:04:36,940
+hand you could define complex numbers
+
+136
+00:04:36,940 --> 00:04:39,550
+purely algebraically you say each one is
+
+137
+00:04:39,550 --> 00:04:41,530
+expressed as some real number plus some
+
+138
+00:04:41,530 --> 00:04:44,110
+other real number times I where pi is a
+
+139
+00:04:44,110 --> 00:04:46,270
+newly invented constant whose defining
+
+140
+00:04:46,270 --> 00:04:47,950
+property is that I times I equals
+
+141
+00:04:47,950 --> 00:04:50,380
+negative one then you say to Linus to
+
+142
+00:04:50,380 --> 00:04:52,360
+multiply two complex numbers you just
+
+143
+00:04:52,360 --> 00:04:54,340
+use the distributive property what many
+
+144
+00:04:54,340 --> 00:04:57,120
+people learn in school is foil
+
+145
+00:04:57,120 --> 00:05:01,110
+and you apply this rule that I times I
+
+146
+00:05:01,110 --> 00:05:02,880
+equals negative one to simplify things
+
+147
+00:05:02,880 --> 00:05:05,130
+down further and that's fine that
+
+148
+00:05:05,130 --> 00:05:06,900
+totally works in the standard textbook
+
+149
+00:05:06,900 --> 00:05:08,550
+way to introduce Quattro neons is
+
+150
+00:05:08,550 --> 00:05:10,560
+analogous to this showing the algebraic
+
+151
+00:05:10,560 --> 00:05:12,540
+rules and calling it done but I think
+
+152
+00:05:12,540 --> 00:05:14,250
+something is missing if we don't at
+
+153
+00:05:14,250 --> 00:05:16,199
+least try to show Linus the geometry of
+
+154
+00:05:16,199 --> 00:05:17,820
+complex numbers then what complex
+
+155
+00:05:17,820 --> 00:05:19,770
+multiplication looks like since the
+
+156
+00:05:19,770 --> 00:05:21,330
+problems in math and physics we're
+
+157
+00:05:21,330 --> 00:05:23,220
+complex numbers are shockingly useful
+
+158
+00:05:23,220 --> 00:05:25,440
+often leverage this spatial intuition
+
+159
+00:05:25,440 --> 00:05:27,960
+you and I who understand two dimensions
+
+160
+00:05:27,960 --> 00:05:29,910
+might think of it like this when you
+
+161
+00:05:29,910 --> 00:05:32,130
+multiply two complex numbers Z times W
+
+162
+00:05:32,130 --> 00:05:34,979
+you can think of Z as a sort of function
+
+163
+00:05:34,979 --> 00:05:37,530
+acting on W rotating and stretching it
+
+164
+00:05:37,530 --> 00:05:40,919
+in some way I like to think of this by
+
+165
+00:05:40,919 --> 00:05:42,660
+broadening the view and asking what does
+
+166
+00:05:42,660 --> 00:05:44,910
+he do to the entire plane and you can
+
+167
+00:05:44,910 --> 00:05:46,470
+think of that bird's-eye view action by
+
+168
+00:05:46,470 --> 00:05:48,479
+imagining using one hand to fix the
+
+169
+00:05:48,479 --> 00:05:50,880
+number 0 in place and using another hand
+
+170
+00:05:50,880 --> 00:05:53,760
+to drag the point at 1 up to Z since
+
+171
+00:05:53,760 --> 00:05:56,100
+anything times 0 is 0 and anything times
+
+172
+00:05:56,100 --> 00:05:59,220
+1 is itself and in two dimensions there
+
+173
+00:05:59,220 --> 00:06:01,320
+is one and only one stretching rotating
+
+174
+00:06:01,320 --> 00:06:03,510
+action on the plane that'll do this this
+
+175
+00:06:03,510 --> 00:06:05,010
+is also how I'll have you thinking about
+
+176
+00:06:05,010 --> 00:06:07,320
+quaternion multiplication later on where
+
+177
+00:06:07,320 --> 00:06:09,030
+the number on the Left acts as a kind of
+
+178
+00:06:09,030 --> 00:06:10,740
+function to the one on the right and
+
+179
+00:06:10,740 --> 00:06:12,690
+we'll understand this function by seeing
+
+180
+00:06:12,690 --> 00:06:14,729
+how it acts by transforming space
+
+181
+00:06:14,729 --> 00:06:17,729
+although instead of rotating 2d space it
+
+182
+00:06:17,729 --> 00:06:19,950
+does a sort of double rotation in 4d
+
+183
+00:06:19,950 --> 00:06:22,220
+space
+
+184
+00:06:22,620 --> 00:06:24,540
+by the way if you want to review
+
+185
+00:06:24,540 --> 00:06:26,250
+thinking about complex numbers as a kind
+
+186
+00:06:26,250 --> 00:06:28,080
+of action a good warm-up for this video
+
+187
+00:06:28,080 --> 00:06:29,760
+might be the one I did on e to the PI I
+
+188
+00:06:29,760 --> 00:06:31,800
+explained with introductory goop theory
+
+189
+00:06:31,800 --> 00:06:34,290
+now line is the line Lander is pretty
+
+190
+00:06:34,290 --> 00:06:35,940
+comfortable with the idea of stretching
+
+191
+00:06:35,940 --> 00:06:37,410
+that's what multiplication by real
+
+192
+00:06:37,410 --> 00:06:39,540
+numbers looks like maybe it's a little
+
+193
+00:06:39,540 --> 00:06:40,980
+weird for him to think about stretching
+
+194
+00:06:40,980 --> 00:06:42,750
+in multiple dimensions but it's not
+
+195
+00:06:42,750 --> 00:06:45,000
+fundamentally different the difficult
+
+196
+00:06:45,000 --> 00:06:46,590
+thing to communicate to Linus is
+
+197
+00:06:46,590 --> 00:06:49,980
+rotation specifically focus on the unit
+
+198
+00:06:49,980 --> 00:06:51,690
+circle of the complex plane all the
+
+199
+00:06:51,690 --> 00:06:54,330
+numbers a distance one from zero since
+
+200
+00:06:54,330 --> 00:06:55,710
+multiplication by these numbers
+
+201
+00:06:55,710 --> 00:06:58,440
+corresponds to pure rotation how would
+
+202
+00:06:58,440 --> 00:07:00,390
+you explain to Linus the look and the
+
+203
+00:07:00,390 --> 00:07:04,860
+feel of multiplying by these numbers at
+
+204
+00:07:04,860 --> 00:07:07,140
+first that might seem impossible I mean
+
+205
+00:07:07,140 --> 00:07:08,970
+rotation is just such an intrinsically
+
+206
+00:07:08,970 --> 00:07:12,000
+two-dimensional idea but on the other
+
+207
+00:07:12,000 --> 00:07:14,460
+hand rotation involves only one degree
+
+208
+00:07:14,460 --> 00:07:16,950
+of freedom a single number the angle
+
+209
+00:07:16,950 --> 00:07:20,250
+specifies a given rotation uniquely so
+
+210
+00:07:20,250 --> 00:07:22,350
+in principle it should be possible to
+
+211
+00:07:22,350 --> 00:07:24,810
+associate the set of all rotations to
+
+212
+00:07:24,810 --> 00:07:26,700
+the one dimensional continuum that is
+
+213
+00:07:26,700 --> 00:07:29,370
+Linus's world and there are many ways
+
+214
+00:07:29,370 --> 00:07:30,990
+you could do this but the one I'm going
+
+215
+00:07:30,990 --> 00:07:32,040
+to show you is what's called a
+
+216
+00:07:32,040 --> 00:07:34,590
+stereographic projection it's a special
+
+217
+00:07:34,590 --> 00:07:36,690
+way to map a circle onto a line or a
+
+218
+00:07:36,690 --> 00:07:39,330
+sphere into a plane or even a 4d hyper
+
+219
+00:07:39,330 --> 00:07:42,740
+sphere into 3d space
+
+220
+00:07:45,690 --> 00:07:48,540
+for every point on the unit circle draw
+
+221
+00:07:48,540 --> 00:07:50,700
+a line from negative 1 through that
+
+222
+00:07:50,700 --> 00:07:52,890
+point and wherever it intersects the
+
+223
+00:07:52,890 --> 00:07:54,600
+vertical line through the circle Center
+
+224
+00:07:54,600 --> 00:07:56,580
+that's where the point of the circle
+
+225
+00:07:56,580 --> 00:07:59,010
+gets projected
+
+226
+00:07:59,010 --> 00:08:01,620
+so for example the point of one gets
+
+227
+00:08:01,620 --> 00:08:03,180
+projected into the center of the line
+
+228
+00:08:03,180 --> 00:08:06,180
+the point I actually stays fixed in
+
+229
+00:08:06,180 --> 00:08:09,610
+place as does negative I
+
+230
+00:08:09,610 --> 00:08:12,580
+all of the points on that 90-degree arc
+
+231
+00:08:12,580 --> 00:08:15,490
+between one and I will get projected
+
+232
+00:08:15,490 --> 00:08:17,409
+somewhere in the interval between where
+
+233
+00:08:17,409 --> 00:08:19,150
+one landed and where I landed
+
+234
+00:08:19,150 --> 00:08:21,639
+as you continue farther around the
+
+235
+00:08:21,639 --> 00:08:23,949
+circle on the arc between I and negative
+
+236
+00:08:23,949 --> 00:08:26,379
+one the projected points end up farther
+
+237
+00:08:26,379 --> 00:08:28,469
+and farther away at an increasing rate
+
+238
+00:08:28,469 --> 00:08:30,490
+similarly if you come around the other
+
+239
+00:08:30,490 --> 00:08:32,799
+way towards negative one the projected
+
+240
+00:08:32,799 --> 00:08:34,570
+points end up farther and farther on the
+
+241
+00:08:34,570 --> 00:08:37,390
+other end of the line this line of
+
+242
+00:08:37,390 --> 00:08:38,860
+projected points is what we show to
+
+243
+00:08:38,860 --> 00:08:41,649
+Linus labeling a few key points like 1
+
+244
+00:08:41,649 --> 00:08:44,220
+and I and negative 1 all for reference
+
+245
+00:08:44,220 --> 00:08:47,019
+technically the point at negative 1 has
+
+246
+00:08:47,019 --> 00:08:48,970
+no projection under this map since the
+
+247
+00:08:48,970 --> 00:08:50,410
+tangent line to the circle at that point
+
+248
+00:08:50,410 --> 00:08:53,079
+never crosses the vertical line but what
+
+249
+00:08:53,079 --> 00:08:55,029
+we say is that negative 1 ends up at the
+
+250
+00:08:55,029 --> 00:08:57,579
+point at infinity this is a special
+
+251
+00:08:57,579 --> 00:08:59,110
+point you imagine adding to the line
+
+252
+00:08:59,110 --> 00:09:01,000
+where you would approach it if you walk
+
+253
+00:09:01,000 --> 00:09:02,860
+infinitely far along the line in either
+
+254
+00:09:02,860 --> 00:09:05,560
+direction now it's important to remember
+
+255
+00:09:05,560 --> 00:09:07,870
+and to remind Linus that what he's
+
+256
+00:09:07,870 --> 00:09:09,850
+seeing is only the complex numbers that
+
+257
+00:09:09,850 --> 00:09:11,950
+are a distance 1 from the origin the
+
+258
+00:09:11,950 --> 00:09:12,610
+unit circle
+
+259
+00:09:12,610 --> 00:09:15,850
+Linus doesn't see most numbers like 0 or
+
+260
+00:09:15,850 --> 00:09:18,940
+1 plus I or negative 2 minus I but
+
+261
+00:09:18,940 --> 00:09:20,740
+that's okay because right now we just
+
+262
+00:09:20,740 --> 00:09:23,140
+want to describe complex numbers Z we're
+
+263
+00:09:23,140 --> 00:09:25,180
+multiplying by Z has the effect of a
+
+264
+00:09:25,180 --> 00:09:27,490
+pure rotation so he only needs to
+
+265
+00:09:27,490 --> 00:09:30,269
+understand the unit circle
+
+266
+00:09:30,269 --> 00:09:32,709
+for example when we take the number I
+
+267
+00:09:32,709 --> 00:09:35,290
+and multiply it by any other complex
+
+268
+00:09:35,290 --> 00:09:37,959
+number W the effect is to rotate by 90
+
+269
+00:09:37,959 --> 00:09:40,690
+degrees counterclockwise and when we
+
+270
+00:09:40,690 --> 00:09:42,279
+apply this action to the circle being
+
+271
+00:09:42,279 --> 00:09:44,380
+projected down to the line for Linus
+
+272
+00:09:44,380 --> 00:09:47,230
+what does he see well it's a bit of a
+
+273
+00:09:47,230 --> 00:09:49,690
+strange morphing action on the line one
+
+274
+00:09:49,690 --> 00:09:51,130
+which I want you to become familiar with
+
+275
+00:09:51,130 --> 00:09:52,470
+for something we'll see you later on
+
+276
+00:09:52,470 --> 00:09:54,970
+it's easiest to understand by following
+
+277
+00:09:54,970 --> 00:09:58,300
+a few key reference points I times 1 is
+
+278
+00:09:58,300 --> 00:10:00,670
+I so that means the number 1 should move
+
+279
+00:10:00,670 --> 00:10:06,490
+up to I I times I is negative 1 so the
+
+280
+00:10:06,490 --> 00:10:09,130
+point at I slides off to infinity
+
+281
+00:10:09,130 --> 00:10:13,420
+I times negative 1 is equal to negative
+
+282
+00:10:13,420 --> 00:10:15,940
+I so that point at infinity kind of
+
+283
+00:10:15,940 --> 00:10:17,800
+comes back around from the bottom to the
+
+284
+00:10:17,800 --> 00:10:20,470
+position one unit below the center and I
+
+285
+00:10:20,470 --> 00:10:23,560
+times negative I is 1 so that point at
+
+286
+00:10:23,560 --> 00:10:26,589
+negative I slides up to 1 even though
+
+287
+00:10:26,589 --> 00:10:28,420
+this is kind of a weird motion it lets
+
+288
+00:10:28,420 --> 00:10:30,069
+us communicate some important ideas to
+
+289
+00:10:30,069 --> 00:10:30,610
+Linus
+
+290
+00:10:30,610 --> 00:10:33,399
+for example multiplying by I 4 times
+
+291
+00:10:33,399 --> 00:10:35,139
+which corresponds to rotating by 90
+
+292
+00:10:35,139 --> 00:10:37,360
+degrees four times in a row gets us back
+
+293
+00:10:37,360 --> 00:10:39,699
+to where we started I to the fourth
+
+294
+00:10:39,699 --> 00:10:42,370
+equals one here to get more of a feel
+
+295
+00:10:42,370 --> 00:10:44,110
+for things let me just show the circle
+
+296
+00:10:44,110 --> 00:10:45,880
+rotated at various different angles on
+
+297
+00:10:45,880 --> 00:10:47,649
+both the left and the right half of the
+
+298
+00:10:47,649 --> 00:10:49,959
+screen here and putting a hand on the
+
+299
+00:10:49,959 --> 00:10:52,240
+point that started at the number one to
+
+300
+00:10:52,240 --> 00:10:54,490
+help us and to help Linus keep track of
+
+301
+00:10:54,490 --> 00:10:57,360
+the overall motion
+
+302
+00:11:04,050 --> 00:11:05,880
+[Music]
+
+303
+00:11:05,880 --> 00:11:08,140
+next let's introduce Felix the
+
+304
+00:11:08,140 --> 00:11:09,970
+flatlander who only understands
+
+305
+00:11:09,970 --> 00:11:12,220
+two-dimensional geometry imagine trying
+
+306
+00:11:12,220 --> 00:11:14,650
+to explain rotations of a sphere to
+
+307
+00:11:14,650 --> 00:11:19,360
+Felix in the spirit of transitioning
+
+308
+00:11:19,360 --> 00:11:20,920
+from complex numbers to quaternions
+
+309
+00:11:20,920 --> 00:11:23,050
+let's extend the complex numbers with
+
+310
+00:11:23,050 --> 00:11:25,030
+its horizontal axis of real numbers and
+
+311
+00:11:25,030 --> 00:11:26,890
+its vertical axis of imaginary numbers
+
+312
+00:11:26,890 --> 00:11:29,560
+with a third axis defined by some newly
+
+313
+00:11:29,560 --> 00:11:32,230
+invented constant J sitting one unit
+
+314
+00:11:32,230 --> 00:11:34,180
+away from zero perpendicular to the
+
+315
+00:11:34,180 --> 00:11:36,670
+complex plane instead of having this new
+
+316
+00:11:36,670 --> 00:11:38,500
+axis in the z direction like you might
+
+317
+00:11:38,500 --> 00:11:40,630
+expect for a better analogy with how
+
+318
+00:11:40,630 --> 00:11:42,730
+well visualize quaternions we'll want to
+
+319
+00:11:42,730 --> 00:11:45,040
+orient things so that the I and the J
+
+320
+00:11:45,040 --> 00:11:47,790
+axes sit in the X and the y directions
+
+321
+00:11:47,790 --> 00:11:50,530
+with the real number line aligned along
+
+322
+00:11:50,530 --> 00:11:54,520
+the z direction so every point in 3d
+
+323
+00:11:54,520 --> 00:11:56,830
+space is described as some real number
+
+324
+00:11:56,830 --> 00:11:59,920
+plus some real number times I plus some
+
+325
+00:11:59,920 --> 00:12:02,560
+real number times J as it happens it's
+
+326
+00:12:02,560 --> 00:12:04,270
+not possible to define a notion of
+
+327
+00:12:04,270 --> 00:12:06,310
+multiplication for a 3d number system
+
+328
+00:12:06,310 --> 00:12:08,140
+like this that would satisfy the usual
+
+329
+00:12:08,140 --> 00:12:09,700
+algebraic properties that make
+
+330
+00:12:09,700 --> 00:12:11,170
+multiplication a useful construct
+
+331
+00:12:11,170 --> 00:12:13,540
+perhaps all outline why this is the case
+
+332
+00:12:13,540 --> 00:12:15,700
+in a follow-on video but staying focused
+
+333
+00:12:15,700 --> 00:12:17,080
+on our current goal think about
+
+334
+00:12:17,080 --> 00:12:19,540
+describing 3d rotations in this
+
+335
+00:12:19,540 --> 00:12:21,400
+coordinate system to Felix the
+
+336
+00:12:21,400 --> 00:12:24,010
+flatlander the unit sphere consists of
+
+337
+00:12:24,010 --> 00:12:25,600
+all those numbers which are a distance
+
+338
+00:12:25,600 --> 00:12:28,420
+one from zero at the origin meaning the
+
+339
+00:12:28,420 --> 00:12:29,950
+sum of the squares of their coordinates
+
+340
+00:12:29,950 --> 00:12:36,940
+is one we can't show all of 3d space to
+
+341
+00:12:36,940 --> 00:12:39,670
+Felix but what we can do is project this
+
+342
+00:12:39,670 --> 00:12:41,800
+2d surface to him and give him a feel
+
+343
+00:12:41,800 --> 00:12:43,570
+for what reorientation of the sphere
+
+344
+00:12:43,570 --> 00:12:45,540
+looked like under that projection
+
+345
+00:12:45,540 --> 00:12:47,310
+analogous to what we did before
+
+346
+00:12:47,310 --> 00:12:49,480
+stereographic projection will associate
+
+347
+00:12:49,480 --> 00:12:51,520
+almost every point on the unit sphere
+
+348
+00:12:51,520 --> 00:12:54,010
+with a unique point on the horizontal
+
+349
+00:12:54,010 --> 00:12:57,610
+plane defined by the I in the J axes for
+
+350
+00:12:57,610 --> 00:12:59,530
+each point on the sphere draw a line
+
+351
+00:12:59,530 --> 00:13:01,200
+from negative 1 at the South Pole
+
+352
+00:13:01,200 --> 00:13:04,060
+through that point and see where it
+
+353
+00:13:04,060 --> 00:13:06,930
+intersects the plane
+
+354
+00:13:11,520 --> 00:13:14,320
+so the point one at the North Pole ends
+
+355
+00:13:14,320 --> 00:13:16,480
+up at the center of the plane all of the
+
+356
+00:13:16,480 --> 00:13:18,130
+points of the Northern Hemisphere get
+
+357
+00:13:18,130 --> 00:13:20,350
+mapped somewhere inside the unit circle
+
+358
+00:13:20,350 --> 00:13:23,440
+of the IJ plane and that unit circle
+
+359
+00:13:23,440 --> 00:13:25,660
+which passes through IJ negative I and
+
+360
+00:13:25,660 --> 00:13:28,060
+negative J actually stays fixed in place
+
+361
+00:13:28,060 --> 00:13:30,190
+and that's an important point to make
+
+362
+00:13:30,190 --> 00:13:32,380
+note of even though most points and
+
+363
+00:13:32,380 --> 00:13:33,970
+lines and patches that Felix the
+
+364
+00:13:33,970 --> 00:13:35,740
+flatlander sees are going to be Warped
+
+365
+00:13:35,740 --> 00:13:38,230
+projections of the real sphere this unit
+
+366
+00:13:38,230 --> 00:13:40,209
+circle is the one thing that he has
+
+367
+00:13:40,209 --> 00:13:42,250
+which is an honest part of our unit
+
+368
+00:13:42,250 --> 00:13:47,680
+sphere unaltered by projection all of
+
+369
+00:13:47,680 --> 00:13:48,640
+the points in the southern hemisphere
+
+370
+00:13:48,640 --> 00:13:51,040
+get projected outside that unit circle
+
+371
+00:13:51,040 --> 00:13:53,529
+each getting farther and farther away as
+
+372
+00:13:53,529 --> 00:13:55,270
+you approach negative one at the South
+
+373
+00:13:55,270 --> 00:13:58,000
+Pole and again negative one has no
+
+374
+00:13:58,000 --> 00:14:00,070
+projection under this mapping but what
+
+375
+00:14:00,070 --> 00:14:02,080
+we say is that it ends up at some point
+
+376
+00:14:02,080 --> 00:14:04,720
+at infinity that point at infinity is
+
+377
+00:14:04,720 --> 00:14:06,220
+something such that no matter which
+
+378
+00:14:06,220 --> 00:14:08,110
+direction you walk on the plane as you
+
+379
+00:14:08,110 --> 00:14:09,970
+go infinitely far out you'll be
+
+380
+00:14:09,970 --> 00:14:12,070
+approaching that point it's analogous to
+
+381
+00:14:12,070 --> 00:14:13,870
+how if you walk any direction away from
+
+382
+00:14:13,870 --> 00:14:15,760
+the North Pole you're approaching the
+
+383
+00:14:15,760 --> 00:14:20,020
+South Pole now let me just pull up a
+
+384
+00:14:20,020 --> 00:14:21,700
+view of what Felix sees in two
+
+385
+00:14:21,700 --> 00:14:24,400
+dimensions as I rotate the sphere in
+
+386
+00:14:24,400 --> 00:14:26,890
+various ways the lines of latitude and
+
+387
+00:14:26,890 --> 00:14:29,020
+longitude drawn on that sphere get
+
+388
+00:14:29,020 --> 00:14:31,089
+projected into various circles and lines
+
+389
+00:14:31,089 --> 00:14:33,490
+in Felix's space and the way I've done
+
+390
+00:14:33,490 --> 00:14:34,900
+things up here the checkerboard pattern
+
+391
+00:14:34,900 --> 00:14:36,370
+on the surface of the sphere is
+
+392
+00:14:36,370 --> 00:14:38,740
+accurately reflected in the projected
+
+393
+00:14:38,740 --> 00:14:40,600
+view that you see with Felix and the
+
+394
+00:14:40,600 --> 00:14:42,940
+pink dot represents where the point that
+
+395
+00:14:42,940 --> 00:14:45,610
+started at the North Pole ends up after
+
+396
+00:14:45,610 --> 00:14:48,970
+the rotation and that yellow circle
+
+397
+00:14:48,970 --> 00:14:50,890
+represents where the Equator ended up
+
+398
+00:14:50,890 --> 00:14:53,620
+after the projection the more you put
+
+399
+00:14:53,620 --> 00:14:55,209
+yourself in Felix's shoes right now
+
+400
+00:14:55,209 --> 00:14:56,980
+the easier quarter neons will be in a
+
+401
+00:14:56,980 --> 00:14:59,110
+moment and as with Linus it helps to
+
+402
+00:14:59,110 --> 00:15:01,029
+focus on a few key reference objects
+
+403
+00:15:01,029 --> 00:15:02,350
+rather than trying to see the whole
+
+404
+00:15:02,350 --> 00:15:05,079
+sphere this circle passing through one
+
+405
+00:15:05,079 --> 00:15:07,540
+eye negative 1 and negative eye gets
+
+406
+00:15:07,540 --> 00:15:10,390
+mapped onto a line which Felix sees as
+
+407
+00:15:10,390 --> 00:15:13,060
+the horizontal axis it's important to
+
+408
+00:15:13,060 --> 00:15:14,680
+remind Felix that what he sees is not
+
+409
+00:15:14,680 --> 00:15:16,670
+the same thing as the IX
+
+410
+00:15:16,670 --> 00:15:18,350
+remember we're only projecting the
+
+411
+00:15:18,350 --> 00:15:19,910
+numbers that have a distance 1 from the
+
+412
+00:15:19,910 --> 00:15:22,640
+origin so most points on the actual I
+
+413
+00:15:22,640 --> 00:15:26,300
+axis like 0 & 2 I and 3i etcetera are
+
+414
+00:15:26,300 --> 00:15:29,830
+completely invisible to Felix
+
+415
+00:15:29,980 --> 00:15:32,690
+similarly the circle that passes through
+
+416
+00:15:32,690 --> 00:15:35,360
+1j negative 1 and negative J gets
+
+417
+00:15:35,360 --> 00:15:36,980
+projected onto what he sees as a
+
+418
+00:15:36,980 --> 00:15:40,130
+vertical line and in general any line
+
+419
+00:15:40,130 --> 00:15:42,860
+that Felix sees comes from some circle
+
+420
+00:15:42,860 --> 00:15:44,390
+on the sphere that passes through
+
+421
+00:15:44,390 --> 00:15:47,390
+negative 1 in some sense a line is just
+
+422
+00:15:47,390 --> 00:15:49,190
+a circle that passes through the point
+
+423
+00:15:49,190 --> 00:15:56,450
+at infinity now think about what Felix
+
+424
+00:15:56,450 --> 00:15:59,570
+sees as we rotate the sphere a 90 degree
+
+425
+00:15:59,570 --> 00:16:02,360
+rotation about the J axis brings one to
+
+426
+00:16:02,360 --> 00:16:05,089
+I I to negative 1 negative 1 to negative
+
+427
+00:16:05,089 --> 00:16:08,930
+I and negative I to 1 so what Felix the
+
+428
+00:16:08,930 --> 00:16:11,660
+flatlander sees is an extension of the
+
+429
+00:16:11,660 --> 00:16:13,339
+rotation that line is the line lander
+
+430
+00:16:13,339 --> 00:16:16,040
+was seeing notice also that this action
+
+431
+00:16:16,040 --> 00:16:18,860
+rotates the I J unit circle to the
+
+432
+00:16:18,860 --> 00:16:21,470
+position where the 1 J unit circle used
+
+433
+00:16:21,470 --> 00:16:24,110
+to be so what Felix sees is his yellow
+
+434
+00:16:24,110 --> 00:16:26,510
+unit circle getting transformed into a
+
+435
+00:16:26,510 --> 00:16:28,910
+vertical line while that red vertical
+
+436
+00:16:28,910 --> 00:16:30,950
+line gets transformed into the unit
+
+437
+00:16:30,950 --> 00:16:33,680
+circle of course from our perspective we
+
+438
+00:16:33,680 --> 00:16:35,720
+know this is all just rigid motion no
+
+439
+00:16:35,720 --> 00:16:37,310
+actual stretching or more thing is
+
+440
+00:16:37,310 --> 00:16:39,140
+taking place all of that is just an
+
+441
+00:16:39,140 --> 00:16:42,890
+artifact of the projection similarly a
+
+442
+00:16:42,890 --> 00:16:45,440
+rotation about the I axis involves
+
+443
+00:16:45,440 --> 00:16:48,740
+moving 1 2 j j 2 negative 1 negative 1
+
+444
+00:16:48,740 --> 00:16:51,589
+to negative J and negative J 2 1 this
+
+445
+00:16:51,589 --> 00:16:54,770
+rotation turns the I J unit circle into
+
+446
+00:16:54,770 --> 00:16:57,649
+the 1i unit circle which to Felix looks
+
+447
+00:16:57,649 --> 00:16:59,660
+like the unit circle getting transformed
+
+448
+00:16:59,660 --> 00:17:01,750
+into a horizontal line
+
+449
+00:17:01,750 --> 00:17:11,290
+a rotation about the real axis is
+
+450
+00:17:11,290 --> 00:17:12,880
+actually quite easy for Felix to
+
+451
+00:17:12,880 --> 00:17:14,709
+understand since the whole projection
+
+452
+00:17:14,709 --> 00:17:16,540
+simply gets rotated about the origin
+
+453
+00:17:16,540 --> 00:17:18,280
+where the only point staying fixed in
+
+454
+00:17:18,280 --> 00:17:20,829
+place are one at the origin and negative
+
+455
+00:17:20,829 --> 00:17:29,950
+one off at infinity in the same way that
+
+456
+00:17:29,950 --> 00:17:31,780
+the complex numbers included the real
+
+457
+00:17:31,780 --> 00:17:33,370
+numbers with a single extra
+
+458
+00:17:33,370 --> 00:17:35,260
+quote-unquote imaginary dimension
+
+459
+00:17:35,260 --> 00:17:38,020
+represented by the unit I and that the
+
+460
+00:17:38,020 --> 00:17:40,120
+not actually a number system thing we
+
+461
+00:17:40,120 --> 00:17:41,740
+had in three dimensions included a
+
+462
+00:17:41,740 --> 00:17:44,380
+second imaginary direction J the
+
+463
+00:17:44,380 --> 00:17:46,270
+quaternions include the real numbers
+
+464
+00:17:46,270 --> 00:17:48,460
+together with three separate imaginary
+
+465
+00:17:48,460 --> 00:17:51,160
+dimensions represented by the unit's I J
+
+466
+00:17:51,160 --> 00:17:53,560
+and K each of these three imaginary
+
+467
+00:17:53,560 --> 00:17:55,900
+dimensions is perpendicular to the real
+
+468
+00:17:55,900 --> 00:17:57,580
+number line and they're all
+
+469
+00:17:57,580 --> 00:18:01,900
+perpendicular to each other somehow so
+
+470
+00:18:01,900 --> 00:18:03,850
+in the same way that complex numbers are
+
+471
+00:18:03,850 --> 00:18:05,950
+represented as a pair of real numbers
+
+472
+00:18:05,950 --> 00:18:07,270
+each quaternion
+
+473
+00:18:07,270 --> 00:18:09,190
+can be written using four real numbers
+
+474
+00:18:09,190 --> 00:18:11,200
+and it lives in four-dimensional space
+
+475
+00:18:11,200 --> 00:18:13,420
+you often think of this as being broken
+
+476
+00:18:13,420 --> 00:18:16,000
+up into a real or scalar part and then a
+
+477
+00:18:16,000 --> 00:18:18,880
+3d imaginary part and Hamilton used a
+
+478
+00:18:18,880 --> 00:18:20,830
+special word for quaternions that had no
+
+479
+00:18:20,830 --> 00:18:23,680
+real part and just ijk components a word
+
+480
+00:18:23,680 --> 00:18:25,630
+which was previously somewhat foreign in
+
+481
+00:18:25,630 --> 00:18:28,900
+the lingo of math and physics vector on
+
+482
+00:18:28,900 --> 00:18:30,820
+the one hand you could just define
+
+483
+00:18:30,820 --> 00:18:32,920
+quaternion multiplication by giving the
+
+484
+00:18:32,920 --> 00:18:35,080
+rules for how I J and K multiplied
+
+485
+00:18:35,080 --> 00:18:37,150
+together and saying that everything must
+
+486
+00:18:37,150 --> 00:18:39,460
+distribute nicely this is analogous to
+
+487
+00:18:39,460 --> 00:18:41,410
+defining complex multiplication by
+
+488
+00:18:41,410 --> 00:18:43,510
+saying that I times I is negative 1 and
+
+489
+00:18:43,510 --> 00:18:45,130
+then distributing and simplifying
+
+490
+00:18:45,130 --> 00:18:47,350
+products and indeed this is how you
+
+491
+00:18:47,350 --> 00:18:48,700
+would tell a computer to perform
+
+492
+00:18:48,700 --> 00:18:50,920
+quaternion multiplication and the
+
+493
+00:18:50,920 --> 00:18:52,990
+relative compactness of this operation
+
+494
+00:18:52,990 --> 00:18:55,090
+compared to say matrix multiplication is
+
+495
+00:18:55,090 --> 00:18:57,190
+what's made quaternion so useful for
+
+496
+00:18:57,190 --> 00:18:58,720
+graphics programming and many other
+
+497
+00:18:58,720 --> 00:19:01,030
+things there's also a rather elegant
+
+498
+00:19:01,030 --> 00:19:02,740
+form of this multiplication rule written
+
+499
+00:19:02,740 --> 00:19:04,210
+in terms of the dot product and the
+
+500
+00:19:04,210 --> 00:19:05,830
+cross product and in some sense
+
+501
+00:19:05,830 --> 00:19:08,380
+quaternion multiplication subsumes both
+
+502
+00:19:08,380 --> 00:19:10,540
+of these notions at least as they appear
+
+503
+00:19:10,540 --> 00:19:12,020
+in three dimensions
+
+504
+00:19:12,020 --> 00:19:14,060
+but just as a deeper understanding for
+
+505
+00:19:14,060 --> 00:19:15,890
+complex multiplication comes from
+
+506
+00:19:15,890 --> 00:19:17,630
+understanding its geometry that
+
+507
+00:19:17,630 --> 00:19:19,580
+multiplying by a complex number involves
+
+508
+00:19:19,580 --> 00:19:21,260
+a combination of scaling and rotating
+
+509
+00:19:21,260 --> 00:19:22,940
+you and I are here for the four
+
+510
+00:19:22,940 --> 00:19:24,440
+dimensional geometry of quaternion
+
+511
+00:19:24,440 --> 00:19:27,200
+multiplication and just as the magnitude
+
+512
+00:19:27,200 --> 00:19:29,000
+of a complex number its distance from
+
+513
+00:19:29,000 --> 00:19:31,040
+zero is the square root of the sum of
+
+514
+00:19:31,040 --> 00:19:33,110
+the squares of its component that same
+
+515
+00:19:33,110 --> 00:19:35,120
+operation gives you the magnitude of a
+
+516
+00:19:35,120 --> 00:19:40,580
+quaternion and multiplying 1/4 nyan q1
+
+517
+00:19:40,580 --> 00:19:44,150
+by another q2 has the effect of scaling
+
+518
+00:19:44,150 --> 00:19:47,300
+q2 by the magnitude of q1 followed by a
+
+519
+00:19:47,300 --> 00:19:49,610
+very special type of rotation in four
+
+520
+00:19:49,610 --> 00:19:52,310
+dimensions and those special 4d
+
+521
+00:19:52,310 --> 00:19:54,050
+rotations the heart of what we need to
+
+522
+00:19:54,050 --> 00:19:56,180
+understand correspond to the hyper
+
+523
+00:19:56,180 --> 00:19:58,490
+sphere of quaternions a distance 1 from
+
+524
+00:19:58,490 --> 00:20:00,740
+the origin both in the sense that the
+
+525
+00:20:00,740 --> 00:20:03,080
+quaternions whose multiplying action is
+
+526
+00:20:03,080 --> 00:20:05,420
+a pure rotation live on that hyper
+
+527
+00:20:05,420 --> 00:20:07,460
+sphere and in the sense that we can
+
+528
+00:20:07,460 --> 00:20:09,740
+understand this weird 4d action just by
+
+529
+00:20:09,740 --> 00:20:11,000
+following points on the hyper sphere
+
+530
+00:20:11,000 --> 00:20:13,280
+rather than trying to look at all of the
+
+531
+00:20:13,280 --> 00:20:15,140
+points in the inconceivable stretch as a
+
+532
+00:20:15,140 --> 00:20:17,990
+four dimensional space analogous to what
+
+533
+00:20:17,990 --> 00:20:19,700
+we did for Linus and Felix we
+
+534
+00:20:19,700 --> 00:20:21,590
+stereographically project this hyper
+
+535
+00:20:21,590 --> 00:20:24,430
+sphere into 3d space
+
+536
+00:20:24,430 --> 00:20:26,980
+[Music]
+
+537
+00:20:26,980 --> 00:20:29,500
+this label in the upper right is going
+
+538
+00:20:29,500 --> 00:20:32,049
+to show a given unit quaternion and this
+
+539
+00:20:32,049 --> 00:20:34,299
+little pink dot will show where that
+
+540
+00:20:34,299 --> 00:20:36,640
+particular quaternion gets projected in
+
+541
+00:20:36,640 --> 00:20:39,669
+our 3d space just as before we're
+
+542
+00:20:39,669 --> 00:20:41,320
+projecting from the number negative one
+
+543
+00:20:41,320 --> 00:20:43,390
+which sits on the real number line that
+
+544
+00:20:43,390 --> 00:20:45,549
+is somehow perpendicular to all of our
+
+545
+00:20:45,549 --> 00:20:48,549
+3d space and beyond our perception just
+
+546
+00:20:48,549 --> 00:20:50,590
+as before the number one ends up
+
+547
+00:20:50,590 --> 00:20:52,330
+projected straight into the center of
+
+548
+00:20:52,330 --> 00:20:55,299
+our space and in the same way that I and
+
+549
+00:20:55,299 --> 00:20:57,400
+negative I were fixed in place for Linus
+
+550
+00:20:57,400 --> 00:21:00,520
+and that the IJ unit circle was fixed in
+
+551
+00:21:00,520 --> 00:21:03,490
+place for Felix we get a whole sphere
+
+552
+00:21:03,490 --> 00:21:06,309
+passing through I J and K on that unit
+
+553
+00:21:06,309 --> 00:21:08,559
+hyper sphere which stays in place under
+
+554
+00:21:08,559 --> 00:21:11,230
+the projection so what we see is a unit
+
+555
+00:21:11,230 --> 00:21:13,660
+sphere in our 3d space represents the
+
+556
+00:21:13,660 --> 00:21:15,760
+only unaltered part of the hyper sphere
+
+557
+00:21:15,760 --> 00:21:16,840
+of quaternions
+
+558
+00:21:16,840 --> 00:21:19,150
+getting projected down on to us it's
+
+559
+00:21:19,150 --> 00:21:21,070
+something analogous to the equator of a
+
+560
+00:21:21,070 --> 00:21:23,230
+3d sphere and it represents all of the
+
+561
+00:21:23,230 --> 00:21:25,900
+unit quaternions whose real part is zero
+
+562
+00:21:25,900 --> 00:21:27,940
+what Hamilton would have described as
+
+563
+00:21:27,940 --> 00:21:33,250
+unit vectors the unit quaternions with
+
+564
+00:21:33,250 --> 00:21:36,250
+positive real parts between 0 & 1 end up
+
+565
+00:21:36,250 --> 00:21:38,530
+somewhere inside this unit sphere closer
+
+566
+00:21:38,530 --> 00:21:41,049
+to the number 1 in our 3d space which
+
+567
+00:21:41,049 --> 00:21:42,250
+should feel analogous to how the
+
+568
+00:21:42,250 --> 00:21:44,320
+Northern Hemisphere got mapped inside
+
+569
+00:21:44,320 --> 00:21:47,830
+the unit circle for Felix on the other
+
+570
+00:21:47,830 --> 00:21:49,419
+hand all the unit quaternions with
+
+571
+00:21:49,419 --> 00:21:51,340
+negative real part end up somewhere
+
+572
+00:21:51,340 --> 00:21:54,690
+outside that unit sphere
+
+573
+00:21:59,500 --> 00:22:02,059
+the number negative one is sitting off
+
+574
+00:22:02,059 --> 00:22:03,890
+at the pointed infinity which you can
+
+575
+00:22:03,890 --> 00:22:06,070
+easily find by walking in any direction
+
+576
+00:22:06,070 --> 00:22:08,510
+keep in mind even though we see the
+
+577
+00:22:08,510 --> 00:22:10,130
+projection of some of these Quatro neons
+
+578
+00:22:10,130 --> 00:22:11,929
+as being closer or farther from the
+
+579
+00:22:11,929 --> 00:22:14,419
+origin of our 3d space everything you're
+
+580
+00:22:14,419 --> 00:22:16,429
+looking at represents a unit quaternion
+
+581
+00:22:16,429 --> 00:22:18,350
+so everything you're looking at really
+
+582
+00:22:18,350 --> 00:22:20,809
+has the same magnitude the same distance
+
+583
+00:22:20,809 --> 00:22:23,000
+from the number zero and that number
+
+584
+00:22:23,000 --> 00:22:25,220
+zero itself is nowhere to be found in
+
+585
+00:22:25,220 --> 00:22:27,410
+this picture like all other non unit
+
+586
+00:22:27,410 --> 00:22:31,040
+quaternions it's invisible to us in the
+
+587
+00:22:31,040 --> 00:22:32,840
+same way that for Felix the circle
+
+588
+00:22:32,840 --> 00:22:34,760
+passing through one eye negative one and
+
+589
+00:22:34,760 --> 00:22:36,919
+negative I got projected into a line
+
+590
+00:22:36,919 --> 00:22:41,510
+through the origin when we see this line
+
+591
+00:22:41,510 --> 00:22:43,549
+through the origin passing through I and
+
+592
+00:22:43,549 --> 00:22:45,590
+negative I we should understand that it
+
+593
+00:22:45,590 --> 00:22:48,350
+really represents a circle likewise upon
+
+594
+00:22:48,350 --> 00:22:50,750
+the hyper sphere invisible to us there
+
+595
+00:22:50,750 --> 00:22:54,110
+is a unit sphere passing through one I J
+
+596
+00:22:54,110 --> 00:22:56,360
+negative one negative I and negative J
+
+597
+00:22:56,360 --> 00:22:59,150
+and that whole sphere gets projected
+
+598
+00:22:59,150 --> 00:23:01,400
+into the plane that we see passing
+
+599
+00:23:01,400 --> 00:23:04,820
+through one i- i j- j and negative one
+
+600
+00:23:04,820 --> 00:23:06,740
+off at infinity what you and i might
+
+601
+00:23:06,740 --> 00:23:09,740
+call the XY plane in general any plane
+
+602
+00:23:09,740 --> 00:23:11,990
+that you see here really represents the
+
+603
+00:23:11,990 --> 00:23:14,179
+projection of a sphere somewhere up on
+
+604
+00:23:14,179 --> 00:23:15,650
+the hyper sphere which passes through
+
+605
+00:23:15,650 --> 00:23:20,059
+the number negative one now the action
+
+606
+00:23:20,059 --> 00:23:21,890
+of taking a unit quaternion and
+
+607
+00:23:21,890 --> 00:23:24,049
+multiplying it by any other quaternion
+
+608
+00:23:24,049 --> 00:23:26,570
+from the left can be thought of in terms
+
+609
+00:23:26,570 --> 00:23:29,240
+of two separate 2d rotations happening
+
+610
+00:23:29,240 --> 00:23:31,340
+perpendicular to and in sync with each
+
+611
+00:23:31,340 --> 00:23:33,350
+other in a way that could only ever be
+
+612
+00:23:33,350 --> 00:23:35,809
+possible in four dimensions as a first
+
+613
+00:23:35,809 --> 00:23:37,610
+example let's look at multiplication by
+
+614
+00:23:37,610 --> 00:23:40,250
+I we already know what this does to the
+
+615
+00:23:40,250 --> 00:23:42,110
+circle that passes through one and I
+
+616
+00:23:42,110 --> 00:23:45,100
+which we see as a line
+
+617
+00:23:45,100 --> 00:23:49,389
+one goes to I I goes to negative one off
+
+618
+00:23:49,389 --> 00:23:52,990
+at infinity negative one comes back
+
+619
+00:23:52,990 --> 00:23:55,509
+around to negative I and negative I goes
+
+620
+00:23:55,509 --> 00:23:58,090
+to one remember just like what lino saw
+
+621
+00:23:58,090 --> 00:23:59,620
+all of this is the stereographic
+
+622
+00:23:59,620 --> 00:24:03,279
+projection of a 90 degree rotation now
+
+623
+00:24:03,279 --> 00:24:05,080
+look at the circle passing through J and
+
+624
+00:24:05,080 --> 00:24:07,600
+K which is in a sense perpendicular to
+
+625
+00:24:07,600 --> 00:24:10,480
+the circle passing through one and I now
+
+626
+00:24:10,480 --> 00:24:11,950
+it might feel weird to talk about two
+
+627
+00:24:11,950 --> 00:24:13,509
+circles being perpendicular to each
+
+628
+00:24:13,509 --> 00:24:15,399
+other especially when they have the same
+
+629
+00:24:15,399 --> 00:24:17,019
+center the same radius and they don't
+
+630
+00:24:17,019 --> 00:24:19,149
+touch each other at all but nothing
+
+631
+00:24:19,149 --> 00:24:20,830
+could be more natural in four dimensions
+
+632
+00:24:20,830 --> 00:24:23,590
+you can think of the action of I on this
+
+633
+00:24:23,590 --> 00:24:25,389
+perpendicular circle as obeying a
+
+634
+00:24:25,389 --> 00:24:28,210
+certain right hand rule if you'll excuse
+
+635
+00:24:28,210 --> 00:24:30,070
+the intrusion of my ghostly green screen
+
+636
+00:24:30,070 --> 00:24:31,509
+hand into our otherwise pristine
+
+637
+00:24:31,509 --> 00:24:34,149
+platonic mathematical stage you let that
+
+638
+00:24:34,149 --> 00:24:35,950
+thumb of your right hand point from the
+
+639
+00:24:35,950 --> 00:24:38,769
+number 1 to I and you curl your fingers
+
+640
+00:24:38,769 --> 00:24:41,889
+the JK circle will rotate in the
+
+641
+00:24:41,889 --> 00:24:45,220
+direction of that curl how much well by
+
+642
+00:24:45,220 --> 00:24:47,320
+the same amount as the one I circle
+
+643
+00:24:47,320 --> 00:24:49,840
+rotates which is 90 degrees in this case
+
+644
+00:24:49,840 --> 00:24:52,360
+this is what I meant by two rotations
+
+645
+00:24:52,360 --> 00:24:54,850
+perpendicular to and in sync with each
+
+646
+00:24:54,850 --> 00:24:59,860
+other so J goes to K K goes to negative
+
+647
+00:24:59,860 --> 00:25:02,220
+J
+
+648
+00:25:03,380 --> 00:25:06,530
+negative J goes to negative K and
+
+649
+00:25:06,530 --> 00:25:11,730
+negative K goes to J this gives us a
+
+650
+00:25:11,730 --> 00:25:13,740
+little table for what the number I does
+
+651
+00:25:13,740 --> 00:25:15,960
+to the other quaternions but I want this
+
+652
+00:25:15,960 --> 00:25:17,220
+not to be something that you memorize
+
+653
+00:25:17,220 --> 00:25:18,840
+but something that you could close your
+
+654
+00:25:18,840 --> 00:25:20,870
+eyes and you could really see
+
+655
+00:25:20,870 --> 00:25:22,890
+computationally if you know what a
+
+656
+00:25:22,890 --> 00:25:25,890
+quaternion does to the numbers 1 IJ and
+
+657
+00:25:25,890 --> 00:25:28,559
+K you know what it does to any arbitrary
+
+658
+00:25:28,559 --> 00:25:30,420
+quaternion since multiplication
+
+659
+00:25:30,420 --> 00:25:32,850
+distributes nicely in the language of
+
+660
+00:25:32,850 --> 00:25:36,480
+linear algebra 1 I J and K form a basis
+
+661
+00:25:36,480 --> 00:25:39,030
+of our four dimensional space so knowing
+
+662
+00:25:39,030 --> 00:25:40,590
+what our transformation does to them
+
+663
+00:25:40,590 --> 00:25:43,020
+gives us the full information about what
+
+664
+00:25:43,020 --> 00:25:45,900
+it does to all of space geometrically a
+
+665
+00:25:45,900 --> 00:25:47,760
+four dimensional creature would be able
+
+666
+00:25:47,760 --> 00:25:49,500
+to look at those two perpendicular
+
+667
+00:25:49,500 --> 00:25:51,059
+rotations that I just described and
+
+668
+00:25:51,059 --> 00:25:53,580
+understand that they lock you into one
+
+669
+00:25:53,580 --> 00:25:55,710
+and only one rigid motion for the hyper
+
+670
+00:25:55,710 --> 00:25:58,230
+sphere we might lack the intuitions of
+
+671
+00:25:58,230 --> 00:26:00,210
+such a hypothetical creature but we can
+
+672
+00:26:00,210 --> 00:26:02,400
+maybe try to get close here's what the
+
+673
+00:26:02,400 --> 00:26:04,260
+action of repeatedly multiplying by I
+
+674
+00:26:04,260 --> 00:26:06,240
+looks like on our stereographic
+
+675
+00:26:06,240 --> 00:26:10,080
+projection of the ijk sphere it gets
+
+676
+00:26:10,080 --> 00:26:12,480
+rotated into what we see as a plane then
+
+677
+00:26:12,480 --> 00:26:14,100
+gets rotated further back to where it
+
+678
+00:26:14,100 --> 00:26:15,750
+used to be though the orientation is all
+
+679
+00:26:15,750 --> 00:26:18,990
+reversed now then it gets rotated again
+
+680
+00:26:18,990 --> 00:26:21,270
+into what we see as a plane and after
+
+681
+00:26:21,270 --> 00:26:22,920
+the fourth iteration it ends up right
+
+682
+00:26:22,920 --> 00:26:25,650
+back where it started as another example
+
+683
+00:26:25,650 --> 00:26:28,290
+think of a quaternion like q equals
+
+684
+00:26:28,290 --> 00:26:30,630
+negative square root of 2 over 2 plus
+
+685
+00:26:30,630 --> 00:26:33,480
+square root of 2 over 2 times i which if
+
+686
+00:26:33,480 --> 00:26:35,010
+we pull up a picture of a complex plane
+
+687
+00:26:35,010 --> 00:26:39,210
+is a 135 degree rotation away from 1 in
+
+688
+00:26:39,210 --> 00:26:42,150
+the direction of i under our projection
+
+689
+00:26:42,150 --> 00:26:44,370
+we see this along the line from 1 to i
+
+690
+00:26:44,370 --> 00:26:46,830
+somewhere outside the unit sphere if
+
+691
+00:26:46,830 --> 00:26:48,960
+that sounds weird just remember how
+
+692
+00:26:48,960 --> 00:26:50,720
+linus would have seen the same number
+
+693
+00:26:50,720 --> 00:26:53,940
+the action of multiplying this Q by all
+
+694
+00:26:53,940 --> 00:26:55,050
+other quarter neons
+
+695
+00:26:55,050 --> 00:26:57,210
+will look to us like dragging the point
+
+696
+00:26:57,210 --> 00:26:59,429
+at 1 all the way to this projected
+
+697
+00:26:59,429 --> 00:27:02,250
+version of Q while the JK circle gets
+
+698
+00:27:02,250 --> 00:27:05,070
+rotated 135 degrees according to our
+
+699
+00:27:05,070 --> 00:27:07,760
+right-hand rule
+
+700
+00:27:09,229 --> 00:27:11,729
+multiplication by any other quaternion
+
+701
+00:27:11,729 --> 00:27:14,339
+is completely similar for example let's
+
+702
+00:27:14,339 --> 00:27:16,139
+see what it looks like for Jay to act on
+
+703
+00:27:16,139 --> 00:27:18,089
+other quaternions by multiplication from
+
+704
+00:27:18,089 --> 00:27:21,479
+the left the circle through 1 + J which
+
+705
+00:27:21,479 --> 00:27:23,489
+we see projected as a line through the
+
+706
+00:27:23,489 --> 00:27:26,129
+origin gets rotated 90 degrees
+
+707
+00:27:26,129 --> 00:27:30,329
+dragging 1 up to J so J times 1 is 1 + J
+
+708
+00:27:30,329 --> 00:27:39,029
+times J is negative 1 the circle
+
+709
+00:27:39,029 --> 00:27:41,249
+perpendicular to that 1 passing through
+
+710
+00:27:41,249 --> 00:27:43,759
+I and K gets rotated 90 degrees
+
+711
+00:27:43,759 --> 00:27:46,229
+according to this right-hand rule where
+
+712
+00:27:46,229 --> 00:27:48,749
+you point your thumb from 1 to J so J
+
+713
+00:27:48,749 --> 00:27:56,809
+times I is negative K and J times K is I
+
+714
+00:27:59,899 --> 00:28:03,959
+in general for any other unit quaternion
+
+715
+00:28:03,959 --> 00:28:06,449
+you see somewhere in space start by
+
+716
+00:28:06,449 --> 00:28:08,249
+drawing the unit circle passing through
+
+717
+00:28:08,249 --> 00:28:11,549
+1 Q and negative 1 which we see in our
+
+718
+00:28:11,549 --> 00:28:13,399
+projection as a line through the origin
+
+719
+00:28:13,399 --> 00:28:15,809
+then draw the circle perpendicular to
+
+720
+00:28:15,809 --> 00:28:17,789
+that one on what we see as the unit
+
+721
+00:28:17,789 --> 00:28:20,609
+sphere you rotate the first circle so
+
+722
+00:28:20,609 --> 00:28:23,369
+that one ends up where Q was and rotate
+
+723
+00:28:23,369 --> 00:28:25,259
+the perpendicular circle by the same
+
+724
+00:28:25,259 --> 00:28:28,999
+amount according to the right hand rule
+
+725
+00:28:39,970 --> 00:28:42,070
+one thing worth noticing here is that
+
+726
+00:28:42,070 --> 00:28:44,440
+order of multiplication matters it's not
+
+727
+00:28:44,440 --> 00:28:46,629
+as mathematicians would say commutative
+
+728
+00:28:46,629 --> 00:28:50,049
+for example I times J is K which you
+
+729
+00:28:50,049 --> 00:28:51,909
+might think of in terms of I acting on
+
+730
+00:28:51,909 --> 00:28:54,970
+the quaternion J rotating it up to K but
+
+731
+00:28:54,970 --> 00:28:57,580
+if you think of J is acting on I J times
+
+732
+00:28:57,580 --> 00:29:01,860
+I it rotates I to negative K in fact
+
+733
+00:29:01,860 --> 00:29:04,240
+commutativity this ability to swap the
+
+734
+00:29:04,240 --> 00:29:06,370
+order of multiplication is a way more
+
+735
+00:29:06,370 --> 00:29:07,929
+special property than a lot of people
+
+736
+00:29:07,929 --> 00:29:10,870
+realize and most groups of actions on
+
+737
+00:29:10,870 --> 00:29:13,210
+some space don't have it it's like how
+
+738
+00:29:13,210 --> 00:29:15,129
+in solving a rubik's cube order matters
+
+739
+00:29:15,129 --> 00:29:15,809
+a lot
+
+740
+00:29:15,809 --> 00:29:18,549
+or how rotating a cube about the z axis
+
+741
+00:29:18,549 --> 00:29:21,100
+and then about the x axis gives a
+
+742
+00:29:21,100 --> 00:29:23,049
+different final state from rotating it
+
+743
+00:29:23,049 --> 00:29:25,450
+about the x axis then about the z axis
+
+744
+00:29:25,450 --> 00:29:31,029
+and last as one final but rather
+
+745
+00:29:31,029 --> 00:29:33,070
+important point so far i've shown you
+
+746
+00:29:33,070 --> 00:29:35,200
+how to think about quaternions as acting
+
+747
+00:29:35,200 --> 00:29:37,419
+by left multiplication where when you
+
+748
+00:29:37,419 --> 00:29:39,549
+read an expression like i times j you
+
+749
+00:29:39,549 --> 00:29:41,259
+think of i as a kind of function
+
+750
+00:29:41,259 --> 00:29:43,539
+morphing all of space and j is just one
+
+751
+00:29:43,539 --> 00:29:45,490
+of the points that it's acting on but
+
+752
+00:29:45,490 --> 00:29:46,899
+you can also think of them as a
+
+753
+00:29:46,899 --> 00:29:48,909
+different sort of action by multiplying
+
+754
+00:29:48,909 --> 00:29:50,889
+from the right where in this expression
+
+755
+00:29:50,889 --> 00:29:54,460
+j would be acting on i in that case the
+
+756
+00:29:54,460 --> 00:29:56,230
+rule for multiplication is very similar
+
+757
+00:29:56,230 --> 00:29:58,990
+it's still the case that one goes to j
+
+758
+00:29:58,990 --> 00:30:01,690
+and j goes to negative 1 etc but instead
+
+759
+00:30:01,690 --> 00:30:03,700
+of applying the right-hand rule to the
+
+760
+00:30:03,700 --> 00:30:05,799
+circle perpendicular to the 1j circle
+
+761
+00:30:05,799 --> 00:30:08,350
+you would use your left hand so either
+
+762
+00:30:08,350 --> 00:30:11,289
+way i times j is equal to k but you can
+
+763
+00:30:11,289 --> 00:30:13,059
+either think about this with your right
+
+764
+00:30:13,059 --> 00:30:15,340
+hand curling the number j to the number
+
+765
+00:30:15,340 --> 00:30:18,789
+k as your thumb points from 1 to i or as
+
+766
+00:30:18,789 --> 00:30:22,299
+your left hand curling I to K as it's
+
+767
+00:30:22,299 --> 00:30:25,480
+thumb points from 1 to J understanding
+
+768
+00:30:25,480 --> 00:30:27,250
+this left hand rule for multiplication
+
+769
+00:30:27,250 --> 00:30:29,559
+from the other side will be extremely
+
+770
+00:30:29,559 --> 00:30:31,509
+useful for understanding how unit
+
+771
+00:30:31,509 --> 00:30:34,029
+quaternions describe rotation in three
+
+772
+00:30:34,029 --> 00:30:37,330
+dimensions and so far it's probably not
+
+773
+00:30:37,330 --> 00:30:39,340
+clear how exactly quarter neons do
+
+774
+00:30:39,340 --> 00:30:41,830
+describe 3d rotation I mean if you
+
+775
+00:30:41,830 --> 00:30:43,539
+consider one of these actions on the
+
+776
+00:30:43,539 --> 00:30:46,149
+unit sphere passing through I J and K it
+
+777
+00:30:46,149 --> 00:30:47,679
+doesn't leave that sphere in place it
+
+778
+00:30:47,679 --> 00:30:49,809
+morphs it out of position so the way
+
+779
+00:30:49,809 --> 00:30:51,159
+that this works is slightly more
+
+780
+00:30:51,159 --> 00:30:52,840
+complicated than a single quaternion
+
+781
+00:30:52,840 --> 00:30:53,389
+product
+
+782
+00:30:53,389 --> 00:30:55,969
+it involves a process called conjugation
+
+783
+00:30:55,969 --> 00:30:57,950
+and I'll make a full follow-on video all
+
+784
+00:30:57,950 --> 00:30:59,570
+about it so that we have the time to go
+
+785
+00:30:59,570 --> 00:31:02,389
+through some examples in the meantime
+
+786
+00:31:02,389 --> 00:31:04,399
+for more information on the story of
+
+787
+00:31:04,399 --> 00:31:05,839
+quaternions and their relation to
+
+788
+00:31:05,839 --> 00:31:08,749
+orientation in 3d space quanta a
+
+789
+00:31:08,749 --> 00:31:10,579
+mathematical publication I'm sure a lot
+
+790
+00:31:10,579 --> 00:31:12,229
+of you are familiar with just put out a
+
+791
+00:31:12,229 --> 00:31:13,879
+post in a kind of loose conjunction with
+
+792
+00:31:13,879 --> 00:31:17,119
+this video link in the description if
+
+793
+00:31:17,119 --> 00:31:19,039
+you enjoyed this consider sharing it
+
+794
+00:31:19,039 --> 00:31:20,659
+with some friends and if you felt like
+
+795
+00:31:20,659 --> 00:31:21,979
+the narrative structure here was
+
+796
+00:31:21,979 --> 00:31:24,349
+actually helpful for understanding maybe
+
+797
+00:31:24,349 --> 00:31:26,029
+reassure those friends who would be
+
+798
+00:31:26,029 --> 00:31:27,679
+turned off by a large timestamp that
+
+799
+00:31:27,679 --> 00:31:30,009
+good math is actually worth the time and
+
+800
+00:31:30,009 --> 00:31:32,539
+many thanks to the patrons among you I
+
+801
+00:31:32,539 --> 00:31:34,579
+actually spent way longer than I care to
+
+802
+00:31:34,579 --> 00:31:36,709
+admit on this project so your patience
+
+803
+00:31:36,709 --> 00:31:38,749
+and support is especially appreciated
+
+804
+00:31:38,749 --> 00:31:41,349
+this time around
+
+805
+00:31:42,020 --> 00:31:48,830
+[Music]
+
+806
+00:31:48,830 --> 00:00:00,000
+you

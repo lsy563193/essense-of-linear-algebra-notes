@@ -45,7 +45,7 @@ def clean_up(lines):
       continue
     elif len(new_lines) and is_lowercase_letter_or_comma(line[0]):
       #combine with previous line
-      new_lines[-1] = new_lines[-1].strip() + '\n\n' + line
+      new_lines[-1] = new_lines[-1].strip() + ' ' + line
     else:
       #append line
       print(line)
