@@ -12,3 +12,5 @@
     - [10 变基](essense-of-linear-algebra/10.change-of-basis..md)
     - [11 特征向量和特征值](essense-of-linear-algebra/11.eigenvectors-and-eigenvalues.md)
     - [12 抽象向量空间](essense-of-linear-algebra/12.abstract-vector-spaces.md)
+- [什么是四元数]()
+    - [1. 什么是四元数](what-are-quaternions/1-what-are-quaternions.md)
